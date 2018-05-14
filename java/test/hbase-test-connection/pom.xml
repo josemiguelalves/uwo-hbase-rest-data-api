@@ -142,6 +142,14 @@
                 <version>3.6.3</version>
         </dependency>
 
+        <dependency>
+            <groupId>streaming</groupId>
+            <artifactId>streaming</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>/home/jose/projects/uwo-lambda-architecture-java-factory/java/lambda-architecture-factory/psstreaming/trunk/target/streaming-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
+
     </dependencies>
     <properties>
         <jersey.version>2.26-b03</jersey.version>

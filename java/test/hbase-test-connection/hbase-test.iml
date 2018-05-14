@@ -108,5 +108,14 @@
     <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver:3.6.3" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:bson:3.6.3" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-core:3.6.3" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: streaming:streaming:1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../../uwo-lambda-architecture-java-factory/java/lambda-architecture-factory/psstreaming/trunk/target/streaming-1.0-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
