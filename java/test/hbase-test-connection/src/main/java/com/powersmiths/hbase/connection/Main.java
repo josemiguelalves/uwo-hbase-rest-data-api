@@ -1,66 +1,66 @@
-        package com.powersmiths.hbase.connection;
+package com.powersmiths.hbase.connection;
 
-        import java.io.IOException;
-
-
-        import com.google.common.base.Stopwatch;
-        import com.mongodb.client.FindIterable;
-        import com.powersmiths.DAO.RealtimeDAO;
-        import com.powersmiths.data.Realtime;
-        import org.apache.hadoop.conf.Configuration;
-        import org.apache.hadoop.hbase.HBaseConfiguration;
-        import org.apache.hadoop.hbase.TableName;
-        import org.apache.hadoop.hbase.ZooKeeperConnectionException;
-        import org.apache.hadoop.hbase.client.Get;
-
-        import org.apache.hadoop.hbase.client.Connection;
-        import org.apache.hadoop.hbase.client.ConnectionFactory;
-        import org.apache.hadoop.hbase.client.Result;
-        import org.apache.hadoop.hbase.client.ResultScanner;
-        import org.apache.hadoop.hbase.client.Scan;
-        import org.apache.hadoop.hbase.client.Table;
-
-        import org.apache.hadoop.hbase.util.Bytes;
-
-        import com.google.protobuf.ServiceException;
-
-        import org.apache.hadoop.hbase.HTableDescriptor;
-        import org.apache.hadoop.hbase.MasterNotRunningException;
-        import org.apache.hadoop.hbase.client.HBaseAdmin;
+import java.io.IOException;
 
 
-        import java.io.IOException;
-        import java.math.BigDecimal;
-        import java.sql.Timestamp;
-        import java.text.DateFormat;
-        import java.text.SimpleDateFormat;
-        import java.util.*;
+import com.google.common.base.Stopwatch;
+import com.mongodb.client.FindIterable;
+import com.powersmiths.DAO.RealtimeDAO;
+import com.powersmiths.data.Realtime;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.HBaseConfiguration;
+import org.apache.hadoop.hbase.TableName;
+import org.apache.hadoop.hbase.ZooKeeperConnectionException;
+import org.apache.hadoop.hbase.client.Get;
+
+import org.apache.hadoop.hbase.client.Connection;
+import org.apache.hadoop.hbase.client.ConnectionFactory;
+import org.apache.hadoop.hbase.client.Result;
+import org.apache.hadoop.hbase.client.ResultScanner;
+import org.apache.hadoop.hbase.client.Scan;
+import org.apache.hadoop.hbase.client.Table;
+
+import org.apache.hadoop.hbase.util.Bytes;
+
+import com.google.protobuf.ServiceException;
+
+import org.apache.hadoop.hbase.HTableDescriptor;
+import org.apache.hadoop.hbase.MasterNotRunningException;
+import org.apache.hadoop.hbase.client.HBaseAdmin;
 
 
-        import com.mongodb.MongoClient;
-        import com.mongodb.MongoClientURI;
-        import com.mongodb.ServerAddress;
+import java.io.IOException;
+import java.math.BigDecimal;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
-        import com.mongodb.client.MongoDatabase;
-        import com.mongodb.client.MongoCollection;
 
-        import org.bson.Document;
-        import com.mongodb.Block;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+import com.mongodb.ServerAddress;
 
-        import com.mongodb.client.MongoCursor;
-        import static com.mongodb.client.model.Filters.*;
-        import com.mongodb.client.result.DeleteResult;
-        import static com.mongodb.client.model.Updates.*;
-        import com.mongodb.client.result.UpdateResult;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.MongoCollection;
 
-        import com.mongodb.client.model.Indexes;
-        import com.mongodb.client.model.Filters;
-        import com.mongodb.client.model.Sorts;
-        import com.mongodb.client.model.TextSearchOptions;
-        import com.mongodb.client.model.Projections;
-        import org.bson.Document;
-        import com.mongodb.BasicDBObject;
-        import org.bson.conversions.Bson;
+import org.bson.Document;
+import com.mongodb.Block;
+
+import com.mongodb.client.MongoCursor;
+import static com.mongodb.client.model.Filters.*;
+import com.mongodb.client.result.DeleteResult;
+import static com.mongodb.client.model.Updates.*;
+import com.mongodb.client.result.UpdateResult;
+
+import com.mongodb.client.model.Indexes;
+import com.mongodb.client.model.Filters;
+import com.mongodb.client.model.Sorts;
+import com.mongodb.client.model.TextSearchOptions;
+import com.mongodb.client.model.Projections;
+import org.bson.Document;
+import com.mongodb.BasicDBObject;
+import org.bson.conversions.Bson;
 
 
         public class Main {
@@ -387,10 +387,10 @@
             @SuppressWarnings("deprecation")
             public static void main(String[] args) throws ServiceException, MasterNotRunningException, ZooKeeperConnectionException, IOException {
 
-//             HbaseConnection();
+            HbaseConnection();
  //            MongoConnectionDay();
 //            MongoConnectionDayNameDate();
-           scan();
+//           scan();
 
 
                 Realtime test_record = new Realtime();
